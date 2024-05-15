@@ -17,6 +17,7 @@ nav a {
 
 h1 {
     color: rgb(201, 33, 173);
+    padding: 10px;
 }    
 
 main img {
@@ -43,12 +44,19 @@ aside {
     width: 20em;
     text-align: center;
     position: relative;
-  }
+}
 
 aside img {
     width: 250px;
     height: auto;
 }    
+
+aside h2 {
+    position: absolute;
+    top: 16px;
+    left: 100px;
+    color: rgb(33, 6, 24)
+}
 
 footer {
     margin-top: 15px;
@@ -68,8 +76,3 @@ footer {
   
 }
 
-aside h2 {
-    position: absolute;
-    top: 20px;
-    left: 100px;
-}
