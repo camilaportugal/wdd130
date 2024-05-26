@@ -25,6 +25,7 @@
     --nav-hover-background-color: #B3DEF9;
 }
 
+
 body {
     font-family: var(--paragraph-font); 
     max-width: 960px;
@@ -182,3 +183,145 @@ footer p {
     padding: 10px;
 }
 
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+/* Contact Style */
+
+#contact-heading {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 10px;
+    width: 920px;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+
+.info-and-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    grid-gap: 0.5rem;
+}
+
+.company-info, .employee-profile {
+    background-color: var(--accent1-color);
+    border: 2px solid var(--secondary-color);
+    padding: 0.5rem;
+    
+}
+
+.company-info h2 {
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.company-info iframe {
+    width:90%;
+    height: 22rem;;
+    margin: 1rem;
+}
+
+.employee-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 6rem auto;
+    justify-content: center;
+    align-items: start; 
+   
+}
+
+.employee-profile h2 {
+    grid-column: 1/4;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    align-self: start;
+}
+
+.employee-profile img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--secondary-color);
+}
+
+.employee-profile figure:nth-child(3) {
+    align-self: end; 
+}
+
+.employee-profile figcaption {
+    text-align: center;
+}
+
+
+.contact-form {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    color: black;
+    background-color: var(--nav-hover-background-color);
+    padding: 0.5rem;
+    margin: 0.5rem 0 0;
+    border: 2px solid var(--secondary-color);
+}
+
+.contact-form h2 {
+    text-align: center;
+    padding: 0.4rem;
+}
+
+form {
+    display: grid;
+}
+
+.radio-group  {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 1rem 0;
+}
+
+.radio-group p {
+    margin: 0.2rem 0;
+}
+
+label {
+    padding: 0.1rem;
+    margin: 0.5rem 0;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid rgba(28, 27, 27, 0.874); 
+    border-radius: 0.3rem;
+    margin: 0 0 0.7rem;
+}
+
+input[type="radio"] {
+   width: 22px;
+   height: auto;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    justify-self: start;
+}
+
+
+button {
+    margin: 2rem auto 1rem;
+    background-color: var(--nav-link-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+  
+button:hover {
+    background-color: var(--nav-background-color);
+    color: var(--primary-color)
+}
