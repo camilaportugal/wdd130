@@ -39,6 +39,13 @@ h1, h2{
     margin: 10px;
 }
 
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
 header {
     padding: 15px;
     background-color: var(--accent2-color);
@@ -101,7 +108,7 @@ nav a:hover {
     width: 920px;
 }
 
-.hero article {
+.hero div {
     position: absolute;
     display: block;
     top: 8rem;
@@ -111,7 +118,7 @@ nav a:hover {
     height: auto;
 }
 
-.hero article img {
+.hero div img {
     float: right;
     width: 200px;
     height: auto;
@@ -324,4 +331,219 @@ button {
 button:hover {
     background-color: var(--nav-background-color);
     color: var(--primary-color)
+}
+
+/* Trips Style */
+
+#head {
+    text-align: center;
+    border-top: 2px solid var(--accent1-color);
+    border-bottom: 2px solid var(--accent1-color);
+    padding: 10px;
+}
+
+.book-a-trip {
+    display: flex; 
+    position: relative;
+}
+
+.book-a-trip img {
+    width: 100%; 
+}
+
+#book  {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+#book h2{
+    position: absolute;
+    display: block;
+    top: 2rem;
+    text-align: center;
+    background-color: rgb(71, 169,255,0.8);
+    padding: 10px;
+    width: 920px; 
+}
+
+#book p{
+    position: absolute;
+    display: block;
+    top: 8rem;
+    text-align: center;
+    background-color: rgba(71, 169, 255, 0.8);
+    padding: 10px;
+    width: 780px; 
+    height: 18%;
+}
+
+#book a{
+    position: absolute;
+    display: block;
+    top: 25rem;
+    text-align: center;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    width: 200px; 
+    height: 10%;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.packages {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.basic-package, .premiun-package {
+    background-color: var(--nav-hover-background-color);
+    border: 2px solid var(--nav-hover-link-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.description {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.basic-package .description:nth-of-type(2), .premiun-package .description:nth-of-type(2) {
+    border-top: 2px solid var(--secondary-color);
+}
+
+.description h3 {
+    grid-column: 1/3;
+}
+
+.description img {
+    width: 200px;
+    height: 290px;
+    border: 2px solid var(--secondary-color);
+    grid-column: 1/2;
+    grid-row: 2/6;
+}
+
+.description p {
+    text-align: left;
+    padding: 5px 0;
+}
+
+.description a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    font-weight: bold;
+    background-color: var(--nav-background-color);
+    margin: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: 2px 0;
+}
+
+caption {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 5px;
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+}
+
+tbody th {
+    background-color: var(--secondary-color);
+    color: rgb(2, 2, 50);
+    padding: 10px;
+    border: 2px solid var(--accent1-color);
+    text-align: left;
+}
+
+tbody td {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    text-align: left;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: white;
+}
+
+
+/* Home Style */
+
+.home-page {
+    display: flex; 
+    position: relative;
+    justify-content: center;
+}
+
+.home-page img {
+    width: 100%;
+    height: 45rem;
+}
+
+#h1-heading {
+    position: absolute;
+    background-color: rgb(71, 169,255,0.8);
+    padding: 10px;
+    top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up {
+    position: absolute;
+    background-color: rgb(71, 169,255,0.8);
+    border: 2px solid  var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 10px;
+    top: 8rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3rem auto;
+    background-color: var(--accent1-color);
+    padding: 10px;
+}
+
+.content-grid h2 {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.content-item {
+    display: grid;
+    grid-template-rows: 1fr 5rem;
+    grid-gap: 10px;
+    justify-items: center;
+    text-align: center;
+}
+
+.content-item img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid var(--secondary-color);
 }
